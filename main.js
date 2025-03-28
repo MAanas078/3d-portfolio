@@ -201,7 +201,7 @@ gltfLoader.load(
 
         // adding texture to book
         const bookTexture = new THREE.TextureLoader().load(
-          'textures/book-inner.jpg'
+          'textures/book.jpg'
         );
         bookTexture.flipY = false;
         child.material = new THREE.MeshStandardMaterial({
@@ -331,7 +331,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0x171f27, flatShading: true }),
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
-    const titleGeo = new TextGeometry('SUSHIL THAPA', {
+    const titleGeo = new TextGeometry('Mohd Aanas', {
       font: font,
       size: 0.08,
       height: 0.01,
@@ -437,7 +437,7 @@ function switchTheme(themeType) {
 
     // main light
     gsap.to(roomLight.color, {
-      r: 1,
+      r: 2,
       g: 1,
       b: 1,
     });
@@ -450,12 +450,12 @@ function switchTheme(themeType) {
       intensity: 2.5,
     });
     gsap.to(ambientLight, {
-      intensity: 0.6,
+      intensity: 0.5,
     });
 
     // fan light
     gsap.to(fanLight5, {
-      distance: 0.05,
+      distance: 0.07,
     });
 
     // text color
