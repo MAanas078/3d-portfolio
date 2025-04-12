@@ -12,6 +12,4 @@ Start the development server
 
 ```sh
 npm run dev
-```
 
-Preview: https://sushil-thapa.com.np/
